@@ -584,4 +584,37 @@
 
 	};
 
+	$( "form" ).submit(function() {
+
+		$('#errMessage').show();
+
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var subject = $("#subject").val();
+		var message = $("#message").val();
+
+		if(name == '')
+		{
+			$('#errMessage').html("Please enter your name.");
+		}
+		else if(email == '')
+		{
+			$('#errMessage').html("Please enter your email.");
+		}
+		else if(subject == '')
+		{
+			$('#errMessage').html("Please enter your subject.");
+		}
+		else if(message == '')
+		{
+			$('#errMessage').html("Please enter your message.");
+		}
+		else
+		{
+			$('#errMessage').html();
+			$('#errMessage').hide();
+		}
+		return false;
+	});
+
 })(jQuery);
