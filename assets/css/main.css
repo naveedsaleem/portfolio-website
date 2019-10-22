@@ -221,6 +221,17 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+
+		#errMessage{	
+			border-radius: 5px;
+			text-align: left; 
+			color: red;
+			background-color: white;
+			font-weight: bold; 
+			padding-left: 10px;
+		}
+
+
 /* Container */
 
 	.container {
@@ -2443,5 +2454,7 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
+
+					
 
 	}

@@ -611,8 +611,13 @@
 		}
 		else
 		{
-			$('#errMessage').html();
-			$('#errMessage').hide();
+			$('#errMessage').html('Message has been sent.');
+			//$('#errMessage').hide();
+			$('#errMessage').css('color','green');
+			$("#name").val('');
+		    $("#email").val('');
+		    $("#subject").val('');
+		    $("#message").val('');
 		}
 		return false;
 	});
